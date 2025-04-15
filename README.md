@@ -16,7 +16,7 @@ https://github.com/kevinveenbirkenbach/package-manager
 Add to your `requirements.txt`:
 
 ```
-colorgen
+colorscheme-generator @ https://github.com/kevinveenbirkenbach/colorscheme-generator/archive/refs/tags/0.1.0.zip
 ```
 
 Or install manually inside your Python project:
