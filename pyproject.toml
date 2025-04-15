@@ -2,9 +2,16 @@
 name = "colorscheme-generator"
 version = "0.1.0"
 description = "A Python utility to generate color schemes from a base color."
-authors = [{ name="Kevin Veen-Birkenbach", email="kevin@veen.world", homepage = "https://www.veen.world" }]
+authors = [{ name="Kevin Veen-Birkenbach", email="kevin@veen.world" }]
 license = "MIT"
+
+[project.urls]
+Homepage = "https://www.veen.world"
+Repository = "https://github.com/kevinveenbirkenbach/colorscheme-generator"
 
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+test = ["pytest"]
