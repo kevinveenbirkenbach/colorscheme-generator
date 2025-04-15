@@ -1,6 +1,6 @@
 [project]
 name = "colorscheme-generator"
-version = "0.2.0"
+version = "0.3.0"
 description = "A Python utility to generate color schemes from a base color."
 authors = [{ name="Kevin Veen-Birkenbach", email="kevin@veen.world" }]
 license = "MIT"
