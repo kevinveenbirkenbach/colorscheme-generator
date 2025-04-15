@@ -83,3 +83,23 @@ def adjust_color_rgb(hex_color, target_lightness=None, lightness_change=0, hue_s
     b = int(hex_val[4:6], 16)
     
     return f"{r},{g},{b}"
+
+def generate_hex_palette(base_color, count=7):
+    """
+    Generate a palette of HEX colors from a base color.
+
+    Colors are evenly distributed by hue rotation.
+
+    Args:
+        base_color (str): HEX color string like '#ff0000'
+        count (int): Number of colors to generate
+
+    Returns:
+        list[str]: List of HEX colors
+    """
+    palette = []
+    for i in range(count):
+        hue_shift = (360 / count) * i
+        hex_color = adjust_color(base_color, hue_shift=hue_shift)
+        palette.append(hex_color)
+    return palette
